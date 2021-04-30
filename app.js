@@ -15,13 +15,13 @@ const colors = [
 
 const cards = [...document.querySelectorAll('.card')];
 for (let color of colors) {
-    const cardAIndex = cards[parseInt(Math.random() * cards.length)]
+    const cardAIndex = parseInt(Math.random() * cards.length)
     const cardA = cards[cardAIndex]
     cards.splice(cardAIndex, 1);
     cardA.className += $,{color} ;
     cardA.setAttribute('data-color', color);
     
-    const cardBIndex = cards[parseInt(Math.random() * cards.length)]
+    const cardBIndex = parseInt(Math.random() * cards.length)
     const cardB = cards[cardBIndex]
     cards.splice(cardBIndex, 1);
     cardB.className += $,{color}
@@ -34,10 +34,10 @@ function onCardClicked(e) {
     if (
         preventClick ||
         target === clickedCard ||
-        target.className.includes('done')) {
-
-        return;
-    }
+        target.className.includes('done')
+        ) {
+          return;
+        }
         
     target.className = target.className
         .replace("color-hidden", '') 
@@ -65,9 +65,9 @@ function onCardClicked(e) {
       } else {
         combosFound++;
         clickedCard = null;
-        if (combosFound == 8 )(
-            alert('You Win'));
-        clickedCard = null;
-       }
+        if (combosFound == 8) {
+            alert('You Win');
+        }    
+      }
     }      
 }

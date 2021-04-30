@@ -1,0 +1,45 @@
+.row {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:oldlace;
+}
+.card:hover {
+    box-shadow: inset 0px 0px 0px 1px rgb(230, 68, 68); 
+    box-sizing: border-box;
+}
+
+.pink {
+    background-color: rgb(238, 175, 230);
+}
+
+.yellow {
+    background-color: rgb(241, 235, 179);
+}
+
+.dpink {
+    background-color: rgb(185, 106, 185);
+}
+
+.green {
+    background-color: rgb(186, 223, 188);
+}
+
+.blue {
+    background-color: rgb(135, 214, 224);
+}
+
+.dblue {
+    background-color: rgb(120, 118, 230);
+}
+
+.red {
+    background-color: rgb(218, 55, 131);
+}
+.dgreen {
+    background-color: rgb(36, 107, 119);
+}

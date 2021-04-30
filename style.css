@@ -7,7 +7,18 @@
     width: 100px;
     height: 100px;
     background-color:oldlace;
+    cursor: pointer;
 }
+
+.card.done {
+    cursor: default;
+}
+
+.card.done:hover{
+    cursor: default;
+    box-shadow: none;
+}
+
 .card:hover {
     box-shadow: inset 0px 0px 0px 1px rgb(230, 68, 68); 
     box-sizing: border-box;
